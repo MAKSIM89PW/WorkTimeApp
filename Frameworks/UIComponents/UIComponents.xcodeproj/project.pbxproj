@@ -7,24 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B936F50A2B264686006F2007 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B936F5092B264686006F2007 /* SnapKit */; };
+		B936F50C2B26468A006F2007 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = B936F50B2B26468A006F2007 /* SnapKit-Dynamic */; };
+		B936F50D2B26468A006F2007 /* SnapKit-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = B936F50B2B26468A006F2007 /* SnapKit-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B975CB282B26182100285868 /* UIComponents.docc in Sources */ = {isa = PBXBuildFile; fileRef = B975CB272B26182100285868 /* UIComponents.docc */; };
-		B975CB2E2B26182100285868 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B975CB232B26182100285868 /* UIComponents.framework */; };
 		B975CB332B26182100285868 /* UIComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CB322B26182100285868 /* UIComponentsTests.swift */; };
 		B975CB342B26182100285868 /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = B975CB262B26182100285868 /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B975CB7E2B261CFE00285868 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CB7D2B261CFE00285868 /* BaseViewController.swift */; };
 		B975CB802B261E5400285868 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CB7F2B261E5400285868 /* BaseView.swift */; };
 		B975CB892B26218800285868 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CB882B26218800285868 /* Constants.swift */; };
+		B975CBA42B2644EA00285868 /* WTAuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CBA32B2644EA00285868 /* WTAuthTextField.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B975CB2F2B26182100285868 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B975CB1A2B26182100285868 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B975CB222B26182100285868;
-			remoteInfo = UIComponents;
+/* Begin PBXCopyFilesBuildPhase section */
+		B936F5082B264619006F2007 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+		B936F50E2B26468A006F2007 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B936F50D2B26468A006F2007 /* SnapKit-Dynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B975CB232B26182100285868 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +52,7 @@
 		B975CB7D2B261CFE00285868 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B975CB7F2B261E5400285868 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		B975CB882B26218800285868 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B975CBA32B2644EA00285868 /* WTAuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTAuthTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B936F50A2B264686006F2007 /* SnapKit in Frameworks */,
+				B936F50C2B26468A006F2007 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,13 +69,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B975CB2E2B26182100285868 /* UIComponents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B936F5022B264615006F2007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B975CB192B26182100285868 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +89,7 @@
 				B975CB252B26182100285868 /* UIComponents */,
 				B975CB312B26182100285868 /* UIComponentsTests */,
 				B975CB242B26182100285868 /* Products */,
+				B936F5022B264615006F2007 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +122,20 @@
 		B975CB7C2B261CE100285868 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B975CBA22B2644A000285868 /* Base */,
 				B975CB7D2B261CFE00285868 /* BaseViewController.swift */,
 				B975CB7F2B261E5400285868 /* BaseView.swift */,
 				B975CB882B26218800285868 /* Constants.swift */,
 			);
 			name = Components;
+			sourceTree = "<group>";
+		};
+		B975CBA22B2644A000285868 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B975CBA32B2644EA00285868 /* WTAuthTextField.swift */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,12 +160,17 @@
 				B975CB1F2B26182100285868 /* Sources */,
 				B975CB202B26182100285868 /* Frameworks */,
 				B975CB212B26182100285868 /* Resources */,
+				B936F50E2B26468A006F2007 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = UIComponents;
+			packageProductDependencies = (
+				B936F5092B264686006F2007 /* SnapKit */,
+				B936F50B2B26468A006F2007 /* SnapKit-Dynamic */,
+			);
 			productName = UIComponents;
 			productReference = B975CB232B26182100285868 /* UIComponents.framework */;
 			productType = "com.apple.product-type.framework";
@@ -141,13 +182,15 @@
 				B975CB292B26182100285868 /* Sources */,
 				B975CB2A2B26182100285868 /* Frameworks */,
 				B975CB2B2B26182100285868 /* Resources */,
+				B936F5082B264619006F2007 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B975CB302B26182100285868 /* PBXTargetDependency */,
 			);
 			name = UIComponentsTests;
+			packageProductDependencies = (
+			);
 			productName = UIComponentsTests;
 			productReference = B975CB2D2B26182100285868 /* UIComponentsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -180,6 +223,7 @@
 			);
 			mainGroup = B975CB192B26182100285868;
 			packageReferences = (
+				B936F5012B26460F006F2007 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = B975CB242B26182100285868 /* Products */;
 			projectDirPath = "";
@@ -215,6 +259,7 @@
 			files = (
 				B975CB802B261E5400285868 /* BaseView.swift in Sources */,
 				B975CB282B26182100285868 /* UIComponents.docc in Sources */,
+				B975CBA42B2644EA00285868 /* WTAuthTextField.swift in Sources */,
 				B975CB7E2B261CFE00285868 /* BaseViewController.swift in Sources */,
 				B975CB892B26218800285868 /* Constants.swift in Sources */,
 			);
@@ -229,14 +274,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B975CB302B26182100285868 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B975CB222B26182100285868 /* UIComponents */;
-			targetProxy = B975CB2F2B26182100285868 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B975CB352B26182100285868 /* Debug */ = {
@@ -429,7 +466,6 @@
 		B975CB3B2B26182100285868 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F6472MA2BW;
@@ -446,7 +482,6 @@
 		B975CB3C2B26182100285868 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F6472MA2BW;
@@ -491,6 +526,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B936F5012B26460F006F2007 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B936F5092B264686006F2007 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B936F5012B26460F006F2007 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		B936F50B2B26468A006F2007 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B936F5012B26460F006F2007 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B975CB1A2B26182100285868 /* Project object */;
 }

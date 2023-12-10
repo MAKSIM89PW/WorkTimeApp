@@ -13,8 +13,6 @@
 		B975CB582B26188600285868 /* AuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B975CB4A2B26188600285868 /* AuthSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B975CB702B261B1300285868 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CB6F2B261B1300285868 /* AuthViewController.swift */; };
 		B975CB722B261B6E00285868 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CB712B261B6E00285868 /* AuthViewModel.swift */; };
-		B975CB852B2620CC00285868 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B975CB842B2620CC00285868 /* UIComponents.framework */; };
-		B975CB862B2620CC00285868 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B975CB842B2620CC00285868 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B975CB8F2B26253E00285868 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B975CB8E2B26253E00285868 /* SnapKit */; };
 		B975CB912B26254200285868 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = B975CB902B26254200285868 /* SnapKit-Dynamic */; };
 		B975CB922B26254200285868 /* SnapKit-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = B975CB902B26254200285868 /* SnapKit-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -37,7 +35,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B975CB862B2620CC00285868 /* UIComponents.framework in Embed Frameworks */,
 				B975CB922B26254200285868 /* SnapKit-Dynamic in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -61,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B975CB852B2620CC00285868 /* UIComponents.framework in Frameworks */,
 				B975CB8F2B26253E00285868 /* SnapKit in Frameworks */,
 				B975CB912B26254200285868 /* SnapKit-Dynamic in Frameworks */,
 			);
