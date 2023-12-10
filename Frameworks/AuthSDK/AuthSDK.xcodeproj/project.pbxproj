@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		B975CB4C2B26188600285868 /* AuthSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = B975CB4B2B26188600285868 /* AuthSDK.docc */; };
 		B975CB522B26188600285868 /* AuthSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B975CB472B26188600285868 /* AuthSDK.framework */; };
-		B975CB572B26188600285868 /* AuthSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CB562B26188600285868 /* AuthSDKTests.swift */; };
 		B975CB582B26188600285868 /* AuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B975CB4A2B26188600285868 /* AuthSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B975CB702B261B1300285868 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CB6F2B261B1300285868 /* AuthViewController.swift */; };
 		B975CB722B261B6E00285868 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CB712B261B6E00285868 /* AuthViewModel.swift */; };
 		B975CB8F2B26253E00285868 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B975CB8E2B26253E00285868 /* SnapKit */; };
 		B975CB912B26254200285868 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = B975CB902B26254200285868 /* SnapKit-Dynamic */; };
 		B975CB922B26254200285868 /* SnapKit-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = B975CB902B26254200285868 /* SnapKit-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B9853A9D2B265D2200642E3C /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9853A9C2B265D2200642E3C /* UIComponents.framework */; };
+		B9853A9E2B265D2200642E3C /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9853A9C2B265D2200642E3C /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B9853A9E2B265D2200642E3C /* UIComponents.framework in Embed Frameworks */,
 				B975CB922B26254200285868 /* SnapKit-Dynamic in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -47,10 +49,10 @@
 		B975CB4A2B26188600285868 /* AuthSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthSDK.h; sourceTree = "<group>"; };
 		B975CB4B2B26188600285868 /* AuthSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AuthSDK.docc; sourceTree = "<group>"; };
 		B975CB512B26188600285868 /* AuthSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B975CB562B26188600285868 /* AuthSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSDKTests.swift; sourceTree = "<group>"; };
 		B975CB6F2B261B1300285868 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		B975CB712B261B6E00285868 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		B975CB842B2620CC00285868 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9853A9C2B265D2200642E3C /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B975CB8F2B26253E00285868 /* SnapKit in Frameworks */,
+				B9853A9D2B265D2200642E3C /* UIComponents.framework in Frameworks */,
 				B975CB912B26254200285868 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,7 +83,6 @@
 				B975CB6F2B261B1300285868 /* AuthViewController.swift */,
 				B975CB712B261B6E00285868 /* AuthViewModel.swift */,
 				B975CB492B26188600285868 /* AuthSDK */,
-				B975CB552B26188600285868 /* AuthSDKTests */,
 				B975CB482B26188600285868 /* Products */,
 				B975CB832B2620CC00285868 /* Frameworks */,
 			);
@@ -104,17 +106,10 @@
 			path = AuthSDK;
 			sourceTree = "<group>";
 		};
-		B975CB552B26188600285868 /* AuthSDKTests */ = {
-			isa = PBXGroup;
-			children = (
-				B975CB562B26188600285868 /* AuthSDKTests.swift */,
-			);
-			path = AuthSDKTests;
-			sourceTree = "<group>";
-		};
 		B975CB832B2620CC00285868 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B9853A9C2B265D2200642E3C /* UIComponents.framework */,
 				B975CB842B2620CC00285868 /* UIComponents.framework */,
 			);
 			name = Frameworks;
@@ -247,7 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B975CB572B26188600285868 /* AuthSDKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

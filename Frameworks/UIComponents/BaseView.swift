@@ -22,7 +22,7 @@ open class BaseView: UIView {
 
 extension BaseView {
     @objc func setup() {
-        
+        print("213")
     }
     
 }

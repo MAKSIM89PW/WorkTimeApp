@@ -17,7 +17,7 @@ open class BaseViewController: UIViewController {
 
 extension BaseViewController {
     @objc open func setup() {
-        
+        print("333")
     }
     
 }

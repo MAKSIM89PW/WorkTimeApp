@@ -11,12 +11,12 @@
 		B936F50C2B26468A006F2007 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = B936F50B2B26468A006F2007 /* SnapKit-Dynamic */; };
 		B936F50D2B26468A006F2007 /* SnapKit-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = B936F50B2B26468A006F2007 /* SnapKit-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B975CB282B26182100285868 /* UIComponents.docc in Sources */ = {isa = PBXBuildFile; fileRef = B975CB272B26182100285868 /* UIComponents.docc */; };
-		B975CB332B26182100285868 /* UIComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CB322B26182100285868 /* UIComponentsTests.swift */; };
 		B975CB342B26182100285868 /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = B975CB262B26182100285868 /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B975CB7E2B261CFE00285868 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CB7D2B261CFE00285868 /* BaseViewController.swift */; };
 		B975CB802B261E5400285868 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CB7F2B261E5400285868 /* BaseView.swift */; };
 		B975CB892B26218800285868 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CB882B26218800285868 /* Constants.swift */; };
 		B975CBA42B2644EA00285868 /* WTAuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B975CBA32B2644EA00285868 /* WTAuthTextField.swift */; };
+		B9853A9B2B2659B500642E3C /* WTTitleSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9853A9A2B2659B500642E3C /* WTTitleSwitchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,11 +48,11 @@
 		B975CB262B26182100285868 /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
 		B975CB272B26182100285868 /* UIComponents.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UIComponents.docc; sourceTree = "<group>"; };
 		B975CB2D2B26182100285868 /* UIComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B975CB322B26182100285868 /* UIComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsTests.swift; sourceTree = "<group>"; };
 		B975CB7D2B261CFE00285868 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B975CB7F2B261E5400285868 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		B975CB882B26218800285868 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B975CBA32B2644EA00285868 /* WTAuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTAuthTextField.swift; sourceTree = "<group>"; };
+		B9853A9A2B2659B500642E3C /* WTTitleSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTTitleSwitchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,6 @@
 			children = (
 				B975CB7C2B261CE100285868 /* Components */,
 				B975CB252B26182100285868 /* UIComponents */,
-				B975CB312B26182100285868 /* UIComponentsTests */,
 				B975CB242B26182100285868 /* Products */,
 				B936F5022B264615006F2007 /* Frameworks */,
 			);
@@ -111,14 +110,6 @@
 			path = UIComponents;
 			sourceTree = "<group>";
 		};
-		B975CB312B26182100285868 /* UIComponentsTests */ = {
-			isa = PBXGroup;
-			children = (
-				B975CB322B26182100285868 /* UIComponentsTests.swift */,
-			);
-			path = UIComponentsTests;
-			sourceTree = "<group>";
-		};
 		B975CB7C2B261CE100285868 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				B975CBA32B2644EA00285868 /* WTAuthTextField.swift */,
+				B9853A9A2B2659B500642E3C /* WTTitleSwitchView.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -261,6 +253,7 @@
 				B975CB282B26182100285868 /* UIComponents.docc in Sources */,
 				B975CBA42B2644EA00285868 /* WTAuthTextField.swift in Sources */,
 				B975CB7E2B261CFE00285868 /* BaseViewController.swift in Sources */,
+				B9853A9B2B2659B500642E3C /* WTTitleSwitchView.swift in Sources */,
 				B975CB892B26218800285868 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B975CB332B26182100285868 /* UIComponentsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
